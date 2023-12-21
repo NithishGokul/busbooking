@@ -1,0 +1,27 @@
+/* TicketBooking.css */
+
+.grid-container {
+    margin-bottom: 16px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    background-color: #81c784;
+    color: #fff;
+  }
+  
+  .seat.selected {
+    background-color: #e57373;
+  }
+  
+  .space {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    background-color: transparent;
+  }
+  
+  /* Add your additional styling here */
+  

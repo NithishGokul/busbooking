@@ -1,0 +1,50 @@
+/* src/Register.css */
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.register-content {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color:00FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.register-button {
+  margin-top: 16px;
+}
+
+.login-link {
+  margin-top: 16px;
+}
+
+.login-link p {
+  color: #333333;
+}
+
+.login-link a {
+  color: rgba(33, 150, 243, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  color: rgba(33, 150, 243, 1);
+}

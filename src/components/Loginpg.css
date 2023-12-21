@@ -1,80 +1,18 @@
-/* Loginpg.css */
+/* src/components/Login.css */
 
-/* Container styles */
-body{
-  background-color: rgb(204, 129, 129);
-  background-image: url("../images/imagebus.jpg");
-  background-size: cover;
-  background-repeat: 'no-repeat';
-  background-position: center center;
-
-
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
 }
-div {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: transparent;
-    box-shadow: 80px 100px 40px 100px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 30px;
-  }
-  
-  /* Form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Label styles */
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  /* Input styles */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  /* Button styles */
-  button {
-    background-color: #ff3d3d;
-    color: #fff;
-    padding: 10px 15px;
-    border: rgb(213, 153, 253);
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  .Register{
-    background-color: #ff4a4a;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline;
 
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  .Register:hover{
-    cursor: pointer;
-    background-color: #45a049;
-  }
-  
-  
+.login-form {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.login-button {
+  margin-top: 16px;
+}

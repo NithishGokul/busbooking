@@ -1,0 +1,32 @@
+/* BusDetails.css */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-around; /* Adjust as needed for horizontal spacing */
+  padding: 16px; /* Add padding around the cards */
+}
+
+.card {
+  width: calc(50% - 16px); /* Set the width of each card to half of the container width with spacing */
+  margin-bottom: 16px; /* Add margin between rows */
+}
+
+.cardMedia {
+  height: 200px; /* Set the height of the card media */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.cardTitle {
+  margin-bottom: 8px;
+}
+
+.cardButton {
+  margin-top: 8px;
+}
