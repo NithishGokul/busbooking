@@ -1,0 +1,171 @@
+{
+  "users": [
+    {
+      "username": "madankishore",
+      "email": "ZDJfaskjdf@gamil.com",
+      "dob": "2024-01-10",
+      "phoneNumber": "2345642234",
+      "password": "madan10",
+      "id": 1
+    },
+    {
+      "username": "madan",
+      "email": "madan12@gmail.com",
+      "dob": "2024-01-16",
+      "phoneNumber": "2345567213",
+      "password": "madan10",
+      "id": 2
+    },
+    {
+      "username": "MOTALPAIYAN",
+      "email": "2345562@gmail.com",
+      "dob": "2024-01-11",
+      "phoneNumber": "4324098329",
+      "password": "1234567",
+      "id": 3
+    },
+    {
+      "username": "madankishore",
+      "email": "ZDJfaskjdf@gamil.com",
+      "dob": "2024-01-05",
+      "phoneNumber": "2345642234",
+      "password": "232322",
+      "id": 4
+    },
+    {
+      "username": "madan",
+      "email": "madan12@gmail.com",
+      "dob": "2024-01-03",
+      "phoneNumber": "2345567213",
+      "password": "madan2",
+      "id": 5
+    },
+    {
+      "username": "madan",
+      "email": "madan232@gamil.com",
+      "dob": "2024-01-08",
+      "phoneNumber": "2223422233",
+      "password": "323232",
+      "id": 6
+    },
+    {
+      "username": "madan",
+      "email": "madan12@gmail.com",
+      "dob": "2024-01-03",
+      "phoneNumber": "1234567891",
+      "password": "madan1",
+      "id": 7
+    },
+    {
+      "username": "ma",
+      "email": "nbmbmbm@gmail.com",
+      "dob": "2024-01-09",
+      "phoneNumber": "5656778997",
+      "password": "madan32",
+      "id": 8
+    },
+    {
+      "username": "madankishore",
+      "email": "ZDJfaskjdf@gamil.com",
+      "dob": "2024-01-01",
+      "phoneNumber": "2345642234",
+      "password": "madan12",
+      "id": 9
+    },
+    {
+      "username": "rere",
+      "email": "ewrerre@gmail.com",
+      "dob": "2024-01-11",
+      "phoneNumber": "5345455665",
+      "password": "ferferfe",
+      "id": 10
+    },
+    {
+      "username": "madankumar",
+      "email": "madan@1234gmail.com",
+      "dob": "2024-01-08",
+      "phoneNumber": "2323232332",
+      "password": "madan23",
+      "id": 11
+    },
+    {
+      "username": "askdfhlksd",
+      "email": "ZDJfaskjdf@gamil.com",
+      "dob": "2024-01-03",
+      "phoneNumber": "2345642234",
+      "password": "madan12",
+      "id": 12
+    },
+    {
+      "username": "hello",
+      "email": "hello@gmail.com",
+      "dob": "2024-01-05",
+      "phoneNumber": "2323232332",
+      "password": "Hello123",
+      "id": 13
+    },
+    {
+      "username": "nithe",
+      "email": "nithe12@gmail.com",
+      "dob": "2024-01-03",
+      "phoneNumber": "2345567213",
+      "password": "nithe21",
+      "id": 14
+    },
+    {
+      "username": "mk",
+      "email": "mk123@gmail.co",
+      "dob": "2024-01-10",
+      "phoneNumber": "2345643232",
+      "password": "masan00",
+      "id": 15
+    },
+    {
+      "username": "mk",
+      "email": "mk12@gmail.com",
+      "dob": "2024-01-09",
+      "phoneNumber": "9843434321",
+      "password": "343443",
+      "id": 16
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "gender": "",
+      "id": 17
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": "",
+      "gender": "",
+      "id": 18
+    },
+    {
+      "firstName": "m",
+      "lastName": "k",
+      "username": "mk",
+      "email": "22cse.madankishore.n@skct.edu.in",
+      "password": "madan2",
+      "confirmPassword": "madan2",
+      "gender": "",
+      "id": 19
+    },
+    {
+      "username": "hidamaddy",
+      "email": "727822tucs106@skct.edu.in",
+      "dob": "",
+      "password": "9865735217",
+      "confirmPassword": "98657356217",
+      "date": "2024-01-17",
+      "id": 20
+    }
+  ]
+}

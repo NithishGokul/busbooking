@@ -52,7 +52,7 @@ const Home = () => {
           <Grid item xs={12}>
             <Link to='/BusDetails' style={{ textDecoration: 'none' }}>
               <Button variant="contained" color="primary" fullWidth style={{ marginTop: '16px' }}>
-                Search Buses;
+                Search Buses
               </Button>
             </Link>
           </Grid>

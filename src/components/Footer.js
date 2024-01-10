@@ -1,43 +1,43 @@
 // Footer.js
 import React from 'react';
-import {
-  Container,
-  Grid,
-  Paper,
-  Typography,
-  InputBase,
-  Button,
-  Link,
-} from '@mui/material';
+import { Container, Grid, Typography, InputBase, Button, Link } from '@mui/material';
 import { styled } from '@mui/system';
 
 const FooterSection = styled('div')({
-  background: '#151414',
+  background: '#3586ff',
   position: 'relative',
   color: '#fff',
+  padding: '50px 0',
 });
 
-const SingleCta = styled('div')({
+const ContactInfo = styled('div')({
+  marginBottom: '40px',
+});
+
+const ContactIcon = styled('i')({
   color: '#ff5e14',
   fontSize: '30px',
   float: 'left',
   marginTop: '8px',
 });
 
-const CtaText = styled('div')({
+const ContactText = styled('div')({
   paddingLeft: '15px',
   display: 'inline-block',
+  '& p':{
+    color:'#fff',
+  },
 });
 
 const FooterLogo = styled('div')({
   marginBottom: '30px',
 });
 
-const FooterText = styled('p')({
+const FooterText = styled(Typography)({
   marginBottom: '14px',
   fontSize: '14px',
   color: '#7e7e7e',
-  lineHeight: '28px',
+  lineHeight: '1.5',
 });
 
 const SocialIcon = styled('span')({
@@ -52,28 +52,33 @@ const SocialIcon = styled('span')({
 const SubscribeForm = styled('div')({
   position: 'relative',
   overflow: 'hidden',
+  color: '#fff',
 });
 
 const SubscribeInput = styled(InputBase)({
   width: '100%',
   padding: '14px 28px',
-  background: '#2E2E2E',
+  background: '#fff',
   border: '1px solid #2E2E2E',
-  color: '#fff',
+  color: '#2E2E2E',
 });
 
 const SubscribeButton = styled(Button)({
   position: 'absolute',
   right: 0,
-  background: '#ff5e14',
-  padding: '13px 20px',
-  border: '1px solid #ff5e14',
-  top: 0,
+  background: '#fff',
+  padding: '4px 7px',
+  border: '2px solid blue',
+  top: 26,
+  
+  
 });
 
 const CopyrightArea = styled('div')({
   background: '#202020',
   padding: '25px 0',
+  textAlign: 'center',
+  color: '#fff',
 });
 
 const FooterMenu = styled('div')({
@@ -87,47 +92,46 @@ const FooterMenu = styled('div')({
   '& li a': {
     fontSize: '14px',
     color: '#878787',
+    textDecoration: 'none',
   },
 });
 
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <Grid container spacing={2} className="footer-cta pt-5 pb-5" sx={{width:'100%'}}>
-          <Grid item xs={12} sm={4} md={4}>
-            <SingleCta>
-              <i className="fas fa-map-marker-alt"></i>
-            </SingleCta>
-            <CtaText>
-              <Typography variant="h4">Find us</Typography>
-              <Typography variant="body2">
-                1010 Avenue, sw 54321, chandigarh
-              </Typography>
-            </CtaText>
+    <FooterSection>
+      <Container maxWidth="x1">
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
+            <ContactInfo>
+              <ContactIcon className="fas fa-map-marker-alt" />
+              <ContactText>
+                <Typography variant="h6">Find us</Typography>
+                <Typography variant="body2">1010 Avenue, SW 54321, Chandigarh</Typography>
+              </ContactText>
+            </ContactInfo>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
-            <SingleCta>
-              <i className="fas fa-phone"></i>
-            </SingleCta>
-            <CtaText>
-              <Typography variant="h4">Call us</Typography>
-              <Typography variant="body2">9876543210 0</Typography>
-            </CtaText>
+          <Grid item xs={12} md={4}>
+            <ContactInfo>
+              <ContactIcon className="fas fa-phone" />
+              <ContactText>
+                <Typography variant="h6">Call us</Typography>
+                <Typography variant="body2">9876543210</Typography>
+              </ContactText>
+            </ContactInfo>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
-            <SingleCta>
-              <i className="far fa-envelope-open"></i>
-            </SingleCta>
-            <CtaText>
-              <Typography variant="h4">Mail us</Typography>
-              <Typography variant="body2">mail@info.com</Typography>
-            </CtaText>
+          <Grid item xs={12} md={4}>
+            <ContactInfo>
+              <ContactIcon className="far fa-envelope-open" />
+              <ContactText>
+                <Typography variant="h6">Mail us</Typography>
+                <Typography variant="body2">mail@info.com</Typography>
+              </ContactText>
+            </ContactInfo>
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} className="footer-content pt-5 pb-5">
-          <Grid item xs={12} sm={4} md={4}>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
             <FooterLogo>
               <Link href="index.html">
                 <img
@@ -138,80 +142,70 @@ const Footer = () => {
                 />
               </Link>
             </FooterLogo>
-            <FooterText>
-              <Typography variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididuntut consec tetur adipisicing
-                elit,Lorem ipsum dolor sit amet.
-              </Typography>
+            <FooterText variant="body2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing elit, Lorem ipsum dolor sit amet.
             </FooterText>
             <SocialIcon>Follow us</SocialIcon>
             <div>
-              <Link href="#">
+              <Link href="#" className="social-icon__link">
                 <i className="fab fa-facebook-f facebook-bg"></i>
               </Link>
-              <Link href="#">
+              <Link href="#" className="social-icon__link">
                 <i className="fab fa-twitter twitter-bg"></i>
               </Link>
-              <Link href="#">
+              <Link href="#" className="social-icon__link">
                 <i className="fab fa-google-plus-g google-bg"></i>
               </Link>
             </div>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} md={4}>
             <FooterMenu>
-              <Typography variant="h3">Useful Links</Typography>
+              <Typography variant="h6">Useful Links</Typography>
               <ul>
                 <li>
-                  <Link href="#">Home</Link>
+                  <Link href="#" className="menu__link">Home</Link>
                 </li>
                 <li>
-                  <Link href="#">about</Link>
+                  <Link href="#" className="menu__link">About</Link>
                 </li>
                 <li>
-                  <Link href="#">services</Link>
+                  <Link href="#" className="menu__link">Services</Link>
                 </li>
                 <li>
-                  <Link href="#">portfolio</Link>
+                  <Link href="#" className="menu__link">Portfolio</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact</Link>
+                  <Link href="#" className="menu__link">Contact</Link>
                 </li>
                 <li>
-                  <Link href="#">About us</Link>
+                  <Link href="#" className="menu__link">About us</Link>
                 </li>
                 <li>
-                  <Link href="#">Our Services</Link>
+                  <Link href="#" className="menu__link">Our Services</Link>
                 </li>
                 <li>
-                  <Link href="#">Expert Team</Link>
+                  <Link href="#" className="menu__link">Expert Team</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact us</Link>
+                  <Link href="#" className="menu__link">Contact us</Link>
                 </li>
                 <li>
-                  <Link href="#">Latest News</Link>
+                  <Link href="#" className="menu__link">Latest News</Link>
                 </li>
               </ul>
             </FooterMenu>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} md={4}>
             <div>
-              <Typography variant="h3">Subscribe</Typography>
-              <FooterText>
-                <Typography variant="body2">
-                  Don’t miss to subscribe to our new feeds, kindly fill the form
-                  below.
-                </Typography>
+              <Typography variant="h6">Subscribe</Typography>
+              <FooterText variant="body2">
+                Don’t miss to subscribe to our new feeds, kindly fill the form below.
               </FooterText>
               <SubscribeForm>
                 <form action="#">
-                  <SubscribeInput
-                    type="text"
-                    placeholder="Email Address"
-                  />
+                  <SubscribeInput type="text" placeholder="Email Address" />
                   <SubscribeButton>
-                    <i className="fab fa-telegram-plane"></i>
+                    <i className="fab fa-telegram-plane"></i><span>Submit</span>
                   </SubscribeButton>
                 </form>
               </SubscribeForm>
@@ -220,36 +214,38 @@ const Footer = () => {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} sm={6} md={6} textAlign="center" sx={{ textLg: 'left' }}>
+          <Grid item xs={12} md={6} textAlign="center">
             <Typography variant="body2" className="copyright-text">
               Copyright &copy; 2018, All Right Reserved{' '}
-              <Link href="https://codepen.io/anupkumar92/">Anup</Link>
+              <Link href="https://codepen.io/anupkumar92/" className="menu__link">
+                Anup
+              </Link>
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={6} textAlign="center" sx={{ display: { xs: 'none', lg: 'block' } }}>
+          <Grid item xs={12} md={6} textAlign="center">
             <FooterMenu>
               <ul>
                 <li>
-                  <Link href="#">Home</Link>
+                  <Link href="#" className="menu__link">Home</Link>
                 </li>
                 <li>
-                  <Link href="#">Terms</Link>
+                  <Link href="#" className="menu__link">Terms</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy</Link>
+                  <Link href="#" className="menu__link">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="#">Policy</Link>
+                  <Link href="#" className="menu__link">Policy</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact</Link>
+                  <Link href="#" className="menu__link">Contact</Link>
                 </li>
               </ul>
             </FooterMenu>
           </Grid>
         </Grid>
-        </div>
-    </div>
+      </Container>
+    </FooterSection>
   );
 };
 
